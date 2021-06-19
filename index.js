@@ -31,7 +31,7 @@ function addMusic(event) {
     //CHECK MARK BUTTON
     const completedButton = document.createElement('button');
     completedButton.innerHTML = '<i class= "fas fa-check"></i>'
-    completedButton.classList.add("completed-btn");
+    completedButton.classList.add("complete-btn");
     musicDiv.appendChild(completedButton);
 
     //CHECK TRASH BUTTON
