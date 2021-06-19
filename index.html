@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Music</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Music list</h1>
+    </header>
+    <form>
+        <input type="text" class="music-input">
+        <button class="music-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="music" class="filter-music">
+                <option value="all">All</option>
+                <option value="jazz">Jazz</option>
+                <option value="rock">Rock</option>
+            </select>
+        </div>
+
+    </form>
+    <div class="music-container">
+        <ul class="music-list"> </ul>
+    </div>
+
+
+
+    <script src="index.js">
+        fetctch("https://openwhyd.org/adrien?format=json%20returns%20the%20last%2020%20tracks%20Adrien")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.sentence)
+                document.querySelector("#debug").innerText = data.sentence
+            })
+    </script>
+
+
+</body>
+
+</html>
