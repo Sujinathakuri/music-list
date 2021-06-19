@@ -1,0 +1,82 @@
+* {
+    margin: 0.5;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(187, 117, 77);
+    color: green;
+    font-family: "Poppins", sans-serif;
+    min-height: 150vh;
+}
+
+header {
+    font-size: 1 rem;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form button {
+    color: rgb(92, 253, 92);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.music-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-list {
+    min-width: 20%;
+    list-style: none;
+}
+
+.music {
+    margin: 0.2rem;
+    background: rgb(154, 135, 221);
+    color: rgb(40, 29, 194);
+    font-size: 1 rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music li {
+    flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+    background: rgb(90, 36, 124);
+    border: none;
+    cursor: pointer;
+    font-size: 1 rem;
+}
+
+.complete-btn {
+    background: rgb(233, 211, 171);
+    color: rgb(146, 168, 146);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1 rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.fall {
+    transform: translateY(7rem) rotateZ(20deg);
+}
