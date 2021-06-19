@@ -39,7 +39,7 @@
 
 
     <script src="index.js">
-        fetctch("https://openwhyd.org/adrien?format=json%20returns%20the%20last%2020%20tracks%20Adrien")
+        fetch("https://openwhyd.org/adrien?format=json%20returns%20the%20last%2020%20tracks%20Adrien")
             .then(response => response.json())
             .then(data => {
                 console.log(data.sentence)
