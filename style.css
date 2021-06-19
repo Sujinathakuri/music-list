@@ -49,6 +49,7 @@ form button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 1s ease;
 }
 
 .music li {
@@ -75,6 +76,11 @@ form button {
 .fa-trash,
 .fa-check {
     pointer-events: none;
+}
+
+.completed song {
+    text-decoration: line-through;
+    opacity: 0.4;
 }
 
 .fall {
