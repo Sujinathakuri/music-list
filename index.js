@@ -3,7 +3,7 @@
 const musicInput = document.querySelector(".music-input");
 const musicButton = document.querySelector(".music-button");
 const musicList = document.querySelector(".music-list");
-const filterOption = document.querySelector(".filter.music");
+const filterOption = document.querySelector(".filter-music");
 
 
 //Event Listeners
@@ -68,8 +68,8 @@ function deleteCheck(e) {
 }
 
 function filtermusic(e) {
-    const music = musicList.childNodes;
-    music.forEach(function(music) {
+    const musics = musicList.childNodes;
+    musics.forEach(function(music) {
         switch (e.target.value) {
             case "all":
                 music.style.display = "flex";
