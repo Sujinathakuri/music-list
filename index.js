@@ -63,7 +63,7 @@ function deleteCheck(e) {
     //CHECK MARK
     if (item.classList[0] === "complete-btn") {
         const music = item.parentElement;
-        music.classList.toggle("completed song");
+        music.classList.toggle("completed");
     }
 }
 
