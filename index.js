@@ -19,14 +19,14 @@ function addMusic(event) {
     //Music DIV
     const musicDiv = document.createElement("div");
     musicDiv.classList.add("music");
+
     //Create LI
     const newMusic = document.createElement('li');
     newMusic.innerText = musicInput.value;
     newMusic.classList.add('music-item');
     musicDiv.appendChild(newMusic);
 
-    //ADD MUSIC TO LOCALSTORAGE
-    saveLocalMusics(music.Input.value);
+
 
     //CHECK MARK BUTTON
     const completedButton = document.createElement('button');
@@ -74,15 +74,15 @@ function filtermusic(e) {
             case "all":
                 music.style.display = "flex";
                 break;
-            case "jazz":
-                if (music.classList.contains('jazz')) {
+            case "completed song":
+                if (music.classList.contains('completed song')) {
                     music.style.display = 'flex';
                 } else {
                     music.style.display = "none";
                 }
                 break;
-            case "rock":
-                if (!music.classList.contains("rock")) {
+            case "uncompleted song":
+                if (!music.classList.contains("uncompleted song")) {
                     music.style.display = 'flex';
                 } else {
                     music.style.display = "none";
@@ -90,17 +90,4 @@ function filtermusic(e) {
                 break;
         }
     });
-}
-
-
-function saveLocalMusics(music) {
-    //CHECK-- HEY DO I ALREADY HAVE THINGS IN THERE?
-    let musics;
-    if (localStorage.getItem("musics") === null) {
-        musics = [];
-    } else {
-        musics = JSON.parse(localStorage.getItem("music"));
-    }
-    musics.push(music);
-    localStorage.setItem("musics", JSON.stringify(musics));
 }
