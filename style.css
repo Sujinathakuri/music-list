@@ -78,7 +78,7 @@ form button {
     pointer-events: none;
 }
 
-.completed song {
+.completed {
     text-decoration: line-through;
     opacity: 0.4;
 }
