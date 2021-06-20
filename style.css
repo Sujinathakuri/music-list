@@ -85,4 +85,5 @@ form button {
 
 .fall {
     transform: translateY(7rem) rotateZ(20deg);
+    opacity: 0;
 }

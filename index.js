@@ -56,13 +56,17 @@ function deleteCheck(e) {
     //DELETE MUSIC
     if (item.classList[0] === "trash-btn") {
         const music = item.parentElement;
+        //ANIMATION
         music.classList.add('fall');
-        music.remove();
+        music.addEventListener('transitionend', function() {
+            music.remove();
+        });
     }
 
     //CHECK MARK
     if (item.classList[0] === "complete-btn") {
         const music = item.parentElement;
+
         music.classList.toggle("completed");
     }
 }
