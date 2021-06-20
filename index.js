@@ -68,7 +68,7 @@ function deleteCheck(e) {
 }
 
 function filtermusic(e) {
-    const musics = musicList.childNodes;
+    let musics = musicList.childNodes;
     musics.forEach(function(music) {
         switch (e.target.value) {
             case "all":
@@ -91,7 +91,3 @@ function filtermusic(e) {
         }
     });
 }
-
-document.addEventListener("DOMContentoaded", () => {
-
-})
