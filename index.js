@@ -91,3 +91,7 @@ function filtermusic(e) {
         }
     });
 }
+
+document.addEventListener("DOMContentoaded", () => {
+
+})
