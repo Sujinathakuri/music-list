@@ -72,14 +72,14 @@ function deleteCheck(e) {
 }
 
 function filtermusic(e) {
-    let musics = musicList.childNodes;
+    const musics = musicList.childNodes;
     musics.forEach(function(music) {
         switch (e.target.value) {
             case "all":
                 music.style.display = "flex";
                 break;
-            case "completed song":
-                if (music.classList.contains('completed song')) {
+            case "completed":
+                if (music.classList.contains('completed')) {
                     music.style.display = 'flex';
                 } else {
                     music.style.display = "none";
