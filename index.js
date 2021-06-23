@@ -78,8 +78,8 @@ function filtermusic(e) {
             case "all":
                 music.style.display = "flex";
                 break;
-            case "completed":
-                if (music.classList.contains('completed')) {
+            case "completed song":
+                if (music.classList.contains('completed song')) {
                     music.style.display = 'flex';
                 } else {
                     music.style.display = "none";
@@ -95,3 +95,4 @@ function filtermusic(e) {
         }
     });
 }
+var music = [];
