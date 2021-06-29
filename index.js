@@ -1,10 +1,15 @@
 //Selectors
 
-const musicInput = document.querySelector(".music-input");
-const musicButton = document.querySelector(".music-button");
-const musicList = document.querySelector(".music-list");
-const filterOption = document.querySelector(".filter-music");
+//const musicInput = document.querySelector(".music-input");
+//const musicButton = document.querySelector(".music-button");
+//const musicList = document.querySelector(".music-list");
+//const filterOption = document.querySelector(".filter-music");
 
+
+const [musicInput, musicButton, musicList, filterOption] = [document.querySelector(".music-input"),
+    document.querySelector(".music-button"), document.querySelector(".music-list"),
+    documrnt.querySelector(".filter-music")
+]
 
 //Event Listeners
 
@@ -72,7 +77,7 @@ function deleteCheck(e) {
 }
 
 function filtermusic(e) {
-    const musics = musicList.childNodes;
+    let musics = musicList.childNodes;
     musics.forEach(function(music) {
         switch (e.target.value) {
             case "all":
