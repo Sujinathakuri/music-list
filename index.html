@@ -40,7 +40,7 @@
         fetch("https://openwhyd.org/adrien?format=json&fbclid=IwAR29DWuhfdgqGoxkMazwxry1URRMoB1ASQTm_boVcwJvckTuZmZcGUiRL4Y")
             .then(response => response.json())
             .then(data => {
-                console.log(data)
+                console.log(data.sentence)
                 document.querySelector("#debug").innerText = data.sentence
             })
     </script>
