@@ -97,3 +97,18 @@ function filtermusic(e) {
     });
 }
 var music = [];
+
+
+let btn = document.querySelector(".test-btn");
+
+function firstfunction(e) {
+    e.preventDefault();
+    btn.innerHTML = "Hello!";
+}
+
+function secondfunction() {
+    btn.style.backgroundColor = "blue";
+}
+
+btn.addEventListener("click", firstfunction);
+btn.addEventListener("click", secondfunction);
