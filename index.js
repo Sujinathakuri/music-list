@@ -97,18 +97,3 @@ function filtermusic(e) {
     });
 }
 var music = [];
-
-fetch("https://openwhyd.org/adrien?format=json&fbclid=IwAR29DWuhfdgqGoxkMazwxry1URRMoB1ASQTm_boVcwJvckTuZmZcGUiRL4", {
-    method: 'POST',
-    headers: {
-        'Content- Type': 'application/json'
-    },
-    body: JSON.stringify({
-        singer: 'Rihana'
-    })
-}).then(res => {
-    return res.json()
-})
-
-.then(data => console.log(data))
-    .catch(error => console.log('ERROR'))
