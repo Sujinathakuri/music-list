@@ -98,17 +98,17 @@ function filtermusic(e) {
 }
 var music = [];
 
+fetch("https://openwhyd.org/adrien?format=json&fbclid=IwAR29DWuhfdgqGoxkMazwxry1URRMoB1ASQTm_boVcwJvckTuZmZcGUiRL4", {
+    method: 'POST',
+    headers: {
+        'Content- Type': 'application/json'
+    },
+    body: JSON.stringify({
+        singer: 'Rihana'
+    })
+}).then(res => {
+    return res.json()
+})
 
-let btn = document.querySelector(".test-btn");
-
-function firstfunction(e) {
-    e.preventDefault();
-    btn.innerHTML = "Hello!";
-}
-
-function secondfunction() {
-    btn.style.backgroundColor = "blue";
-}
-
-btn.addEventListener("click", firstfunction);
-btn.addEventListener("click", secondfunction);
+.then(data => console.log(data))
+    .catch(error => console.log('ERROR'))
