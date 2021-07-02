@@ -112,4 +112,11 @@ const myCoolFunction = async() => {
     return jsonUserData;
 }
 
-myCoolFunction();
+
+const anotherFunc = async() => {
+    const data = await myCoolFunction();
+    myUsers.userList = data;
+}
+
+anotherFunc();
+console.log(myUsers.userList);
