@@ -106,7 +106,7 @@ const myUsers = {
 }
 
 const myCoolFunction = async() => {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const response = await fetch("https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay");
     const jsonUserData = await response.json();
     console.log(jsonUserData);
     return jsonUserData;
