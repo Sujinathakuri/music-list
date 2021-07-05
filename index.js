@@ -73,7 +73,7 @@ function deleteCheck(e) {
 }
 
 function filtermusic(e) {
-    let musics = musicList.childNodes;
+    const musics = musicList.childNodes;
     musics.forEach(function(music) {
         switch (e.target.value) {
             case "all":
