@@ -87,7 +87,7 @@ form button {
 
 .pads {
     background: rgb(161, 161, 219);
-    width: 50%;
+    width: 100%;
     display: flex;
 }
 
@@ -103,12 +103,4 @@ form button {
 
 .pad2 {
     background: rgb(212, 109, 190);
-}
-
-.pad3 {
-    background: yellow;
-}
-
-.pad4 {
-    background: rgb(39, 199, 39);
 }
