@@ -1,2 +1,2 @@
 # music-list
-This is my project 
+The topic for my project is 'Music List'. It has three main component add song, delete song and filter song. 

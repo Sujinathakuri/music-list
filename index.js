@@ -72,6 +72,8 @@ function deleteCheck(e) {
     }
 }
 
+//FUNCTION
+
 function filtermusic(e) {
     const musics = musicList.childNodes;
     musics.forEach(function(music) {
@@ -80,7 +82,7 @@ function filtermusic(e) {
                 music.style.display = "flex";
                 break;
             case "completed song":
-                if (music.classList.contains('completed song')) {
+                if (music.classList.contains("completed song")) {
                     music.style.display = 'flex';
                 } else {
                     music.style.display = "none";
