@@ -87,13 +87,13 @@ form button {
 
 .pads {
     background: rgb(161, 161, 219);
-    width: 100%;
+    width: 200%;
     display: flex;
 }
 
 .pads>div {
     height: 100px;
-    width: 100 px;
+    width: 100px;
     flex: 1;
 }
 
