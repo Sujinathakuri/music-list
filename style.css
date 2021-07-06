@@ -5,10 +5,7 @@
 }
 
 body {
-    background: rgb(187, 117, 77);
-    color: green;
     font-family: "Poppins", sans-serif;
-    min-height: 150vh;
 }
 
 header {
