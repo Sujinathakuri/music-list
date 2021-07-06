@@ -88,6 +88,18 @@ form button {
     opacity: 0;
 }
 
+.pads {
+    background: rgb(161, 161, 219);
+    width: 50%;
+    display: flex;
+}
+
+.pads>div {
+    height: 100px;
+    width: 100 px;
+    flex: 1;
+}
+
 .pad1 {
     background: rgb(84, 84, 214);
 }
