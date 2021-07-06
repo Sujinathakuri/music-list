@@ -101,7 +101,7 @@ function filtermusic(e) {
 var music = [];
 
 
-//Async /Await
+//Async JS
 
 const myUsers = {
     userList: []
