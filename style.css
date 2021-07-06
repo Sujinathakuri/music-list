@@ -87,3 +87,19 @@ form button {
     transform: translateY(7rem) rotateZ(20deg);
     opacity: 0;
 }
+
+.pad1 {
+    background: rgb(84, 84, 214);
+}
+
+.pad2 {
+    background: rgb(212, 109, 190);
+}
+
+.pad3 {
+    background: yellow;
+}
+
+.pad4 {
+    background: rgb(39, 199, 39);
+}
