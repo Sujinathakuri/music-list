@@ -4,21 +4,23 @@
     box-sizing: border-box;
 }
 
-header h1 {
-    margin: 50px;
-    text-align: center;
-    font-size: 40px;
-}
-
 body {
-    background: rgb(187, 117, 77);
+    background: rgb(200, 172, 226);
     color: green;
     font-family: "Poppins", sans-serif;
     min-height: 150vh;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
+header {
+    font-size: 1 rem;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 form button {
@@ -84,24 +86,4 @@ form button {
 .fall {
     transform: translateY(7rem) rotateZ(20deg);
     opacity: 0;
-}
-
-.pads {
-    background: rgb(161, 161, 219);
-    width: 100%;
-    display: flex;
-}
-
-.pads>div {
-    height: 100px;
-    width: 100px;
-    flex: 1;
-}
-
-.pad1 {
-    background: rgb(84, 84, 214);
-}
-
-.pad2 {
-    background: rgb(212, 109, 190);
 }
