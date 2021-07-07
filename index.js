@@ -112,7 +112,7 @@ const myUsers = {
 
 const myCoolFunction = async() => {
     const response = await fetch("https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay");
-    debugger;
+
     const jsonUserData = await response.json();
 
     console.log(jsonUserData);
@@ -126,4 +126,4 @@ const anotherFunc = async() => {
 }
 
 anotherFunc();
-console.log(myUsers.userList, intFormedYear);
+console.log(myUser.userlist);
