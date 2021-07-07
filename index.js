@@ -80,7 +80,7 @@ function filtermusic(e) {
     musics.forEach(function(music) {
         switch (e.target.value) {
             case "all":
-                music.style.display = "flex";
+                music.style.display = 'flex';
                 break;
             case "completed song":
                 if (music.classList.contains("completed song")) {
@@ -123,13 +123,3 @@ const anotherFunc = async() => {
 
 anotherFunc();
 console.log(myUsers.userList);
-
-
-
-const existingArray = ["album", "dom", "js"];
-const newArray = existingArray.map(function(value, index, array) {
-    console.log(array);
-    return index + ": " + value + "!";
-});
-
-console.log(newArray);
