@@ -6,12 +6,13 @@ const musicList = document.querySelector(".music-list");
 const filterOption = document.querySelector(".filter-music");
 
 
-
 //Event Listeners
 
 musicButton.addEventListener('click', addMusic);
 musicList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('click', filtermusic);
+
+
 
 //Functions
 
