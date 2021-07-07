@@ -80,18 +80,18 @@ function filtermusic(e) {
     musics.forEach(function(music) {
         switch (e.target.value) {
             case "all":
-                music.style.display = 'flex';
+                music.style.display = "flex";
                 break;
             case "completed song":
                 if (music.classList.contains("completed song")) {
-                    music.style.display = 'flex';
+                    music.style.display = "flex";
                 } else {
                     music.style.display = "none";
                 }
                 break;
             case "uncompleted song":
                 if (!music.classList.contains("uncompleted song")) {
-                    music.style.display = 'flex';
+                    music.style.display = "flex";
                 } else {
                     music.style.display = "none";
                 }
