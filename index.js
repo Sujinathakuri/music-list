@@ -131,16 +131,20 @@ const songs = [{
         song: 'Heaven',
         ablum: 'hawana',
         id: '11',
+        gender: 'female',
+
     },
     {
         song: 'Hola',
         ablum: 'wola',
         id: '22',
+        gender: 'male'
     },
     {
         song: 'wo',
         ablum: 'waaah',
         id: '1000',
+        gender: 'female'
     },
 
 
@@ -148,8 +152,7 @@ const songs = [{
 ];
 
 
-const greater100songs = songs.filter(
-    (song) => song.mass > 100
+const femalesongs = songs.filter(
+    (song) => song.gender === 'female'
 );
-
-console.log(greater100songs);
+console.log(femalesongs);
