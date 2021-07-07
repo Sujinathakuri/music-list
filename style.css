@@ -83,3 +83,26 @@ form button {
     transform: translateY(7rem) rotateZ(20deg);
     opacity: 0;
 }
+
+select {
+    color: rgb(201, 77, 180);
+    width: 10rem;
+    cursor: pointer;
+    padding: 1 rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: rgb(204, 81, 153);
+    top: 0;
+    right: 0;
+    padding: 1 rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: white;
+    color: pink;
+}
