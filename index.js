@@ -126,6 +126,7 @@ console.log(myUsers.userList);
 
 
 
+const existingArray = ["album", "dom", "js"];
 const newArray = existingArray.map(function(value, index, array) {
     console.log(array);
     return index + ": " + value + "!";
