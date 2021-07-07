@@ -1,5 +1,6 @@
 //Selectors
 
+
 const musicInput = document.querySelector(".music-input");
 const musicButton = document.querySelector(".music-button");
 const musicList = document.querySelector(".music-list");
@@ -80,18 +81,19 @@ function filtermusic(e) {
     musics.forEach(function(music) {
         switch (e.target.value) {
             case "all":
-                music.style.display = "flex";
+                music.style.display = "block";
+
                 break;
             case "completed song":
                 if (music.classList.contains("completed song")) {
-                    music.style.display = "flex";
+                    music.style.display = "block";
                 } else {
                     music.style.display = "none";
                 }
                 break;
             case "uncompleted song":
                 if (!music.classList.contains("uncompleted song")) {
-                    music.style.display = "flex";
+                    music.style.display = "block";
                 } else {
                     music.style.display = "none";
                 }
