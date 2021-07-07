@@ -126,4 +126,4 @@ const anotherFunc = async() => {
 }
 
 anotherFunc();
-console.log(myUsers.userList);
+console.log(myUsers.userList, intFormedYear);
