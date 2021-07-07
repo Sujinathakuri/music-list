@@ -123,3 +123,12 @@ const anotherFunc = async() => {
 
 anotherFunc();
 console.log(myUsers.userList);
+
+
+const existingArray = ["dcode", "dom", "js"];
+const newArray = existingArray.map(function(value, index, array) {
+    console.log(array);
+    return index + ": " + value + "!";
+});
+
+console.log(newArray);
