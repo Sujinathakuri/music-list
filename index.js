@@ -125,3 +125,31 @@ const anotherFunc = async() => {
 
 anotherFunc();
 console.log(myUsers.userList);
+
+
+const songs = [{
+        song: 'Heaven',
+        ablum: 'hawana',
+        id: '11',
+    },
+    {
+        song: 'Hola',
+        ablum: 'wola',
+        id: '22',
+    },
+    {
+        song: 'wo',
+        ablum: 'waaah',
+        id: '1000',
+    },
+
+
+
+];
+
+
+const greater100songs = songs.filter(
+    (song) => song.mass > 100
+);
+
+console.log(greater100songs);
