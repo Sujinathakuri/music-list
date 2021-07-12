@@ -106,24 +106,24 @@ var music = [];
 
 //Async JS
 
-const myUsers = {
-    userList: []
+function fetchBooks() {
+
+
+    return fetch("https://anapioficeandfire.com/api/books")
+        .then(response => response.json())
+        .then(json => renderBooks(json))
+
 }
 
-const myCoolFunction = async() => {
-    const response = await fetch("https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay");
-
-    const jsonUserData = await response.json();
-
-    console.log(jsonUserData);
-    return jsonUserData;
+function renderBooks(books) {
+    const main = document.querySelector('main');
+    books.forEach(book => {
+        const h2 = document.createElement('h2');
+        h2.innerHTML = book.name;
+        main.appendChild(h2);
+    });
 }
 
-
-const anotherFunc = async() => {
-    const data = await myCoolFunction();
-    myUsers.userList = data;
-}
-
-anotherFunc();
-console.log(myUser.userlist);
+document.addEventListener('DOMContentLoaded', function() {
+    fetchBooks();
+});
