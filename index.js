@@ -106,14 +106,19 @@ var music = [];
 
 //Async JS
 
+document.addEventListener('DOMContentLoaded', function() {
+    fetchBooks();
+});
+
 function fetchBooks() {
-
-
-    return fetch("https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay")
-        .then(response => response.json())
-        .then(json => renderBooks(json))
-
+    return fetch('https://anapioficeandfire.com/api/books')
+        .then(resp => resp.json())
+        .then(data => {
+            renderBooks(data);
+        });
 }
+
+//fetchBooks();
 
 function renderBooks(books) {
     const main = document.querySelector('main');
@@ -123,7 +128,3 @@ function renderBooks(books) {
         main.appendChild(h2);
     });
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    fetchBooks();
-});
