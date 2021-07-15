@@ -78,12 +78,11 @@ function deleteCheck(e) {
 
 function filtermusic(e) {
     const musics = musicList.childNodes;
-    musics.forEach(function(music) {
+    music.forEach(function(music) {
+
         switch (e.target.value) {
             case "all":
-                fetchMusics()
                 music.style.display = "flex";
-
                 break;
             case "completed song":
                 if (music.classList.contains("completed song")) {
@@ -108,12 +107,13 @@ var music = [];
 //Async JS
 
 
-function fetchMusics() {
+function fetchMusics(data) {
     return fetch('https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay')
         .then(resp => resp.json())
-        .then(data => {
-            renderMusics(data);
-        });
+
+    .then(data => {
+        console.log(data)
+    });
 }
 
 //fetchMusics();
