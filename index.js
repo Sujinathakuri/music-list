@@ -106,9 +106,6 @@ var music = [];
 
 //Async JS
 
-document.addEventListener('DOMContentLoaded', function() {
-    fetchMusics();
-});
 
 function fetchMusics() {
     return fetch('https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay')
@@ -122,9 +119,13 @@ function fetchMusics() {
 
 function renderMusics(musics) {
     const main = document.querySelector('main');
-    Music.forEach(Music => {
+    music.forEach(music => {
         const h2 = document.createElement('h2');
         h2.innerHTML = music.name;
         main.appendChild(h2);
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetchMusics();
+});
