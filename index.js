@@ -106,32 +106,24 @@ var music = [];
 
 //Async JS
 
-fetch('https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay')
-    .then(resp => resp.json())
-    .then((musiclist) => {
-        music.forEach(music => {
-            renderMusiclist(music)
-        })
+function fetchBooks() {
+    // To pass the tests, don't forget to return your fetch!
+    fetch('https://anapioficeandfire.com/api/books');
 
-    })
-
-
-
-function renderMusiclist(musiclist) {
-    const musiclistsong = document.createElement('div')
-    const musicInfo = `
-    <div class='song' id='${musiclist.id}'>
-    <h2>${musiclist.name}</h2>
-    </div>
-    `
-
-    musiclistsong.innerHTML = musicinfo
-
-    musiclistContainer.appendChild(musiclistsong)
-
-    musiclistsong.addEventListener("click", () => showsong(musiclist.id))
+    return fetch('https://anapioficeandfire.com/api/books')
+        .then(resp => resp.json())
+        .then(json => renderBooks(json));
 }
 
-function showmusic(id) {
-    console.log(id)
+function renderBooks(books) {
+    const main = document.querySelector('main');
+    books.forEach(book => {
+        const h2 = document.createElement('h2');
+        h2.innerHTML = book.name;
+        main.appendChild(h2);
+    });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetchBooks();
+});
