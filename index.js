@@ -119,7 +119,7 @@ function fetchMusics() {
 
 function renderMusics(musics) {
     const main = document.querySelector('main');
-    musics.forEach(music => {
+    music.forEach(music => {
         const h2 = document.createElement('h2');
         h2.innerHTML = music.name;
         main.appendChild(h2);
