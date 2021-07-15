@@ -107,17 +107,19 @@ var music = [];
 //Async JS
 
 
-fetch('https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay')
-    .then(resp => resp.json())
-    .then(data => {
-        renderMusics(data);
-    });
-
+function fetchMusics() {
+    return fetch('https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay')
+        .then(resp => resp.json())
+        .then(data => {
+            renderMusics(data);
+        });
+}
 
 //fetchMusics();
 
 function renderMusics(musics) {
-    musics.forEach(music => {
+    const main = document.querySelector('main');
+    music.forEach(music => {
         const h2 = document.createElement('h2');
         h2.innerHTML = music.name;
         main.appendChild(h2);
