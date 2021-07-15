@@ -110,10 +110,9 @@ var music = [];
 function fetchMusics(data) {
     return fetch('https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay')
         .then(resp => resp.json())
-
-    .then(data => {
-        console.log(data)
-    });
+        .then(data => {
+            console.log(data) //data=>array=>gettting value from array
+        });
 }
 
 //fetchMusics();
