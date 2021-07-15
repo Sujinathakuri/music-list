@@ -81,6 +81,7 @@ function filtermusic(e) {
     musics.forEach(function(music) {
         switch (e.target.value) {
             case "all":
+                fetchMusics()
                 music.style.display = "flex";
 
                 break;
@@ -125,3 +126,7 @@ function renderMusics(musics) {
         main.appendChild(h2);
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetchMusics();
+});
