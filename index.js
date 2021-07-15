@@ -107,17 +107,12 @@ var music = [];
 //Async JS
 
 
-function fetchMusics() {
-    return fetch('https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay')
-        .then(resp => resp.json())
-        .then(data => {
-            renderMusics(data);
-        });
+fetch('https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay')
+    .then(resp => resp.json())
+    .then(data => {
+        renderMusics(data);
+    });
 }
-
-
-
-
 
 //fetchMusics();
 
@@ -129,3 +124,7 @@ function renderMusics(musics) {
         main.appendChild(h2);
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetchMusics();
+});
