@@ -123,7 +123,3 @@ function renderMusics(musics) {
         main.appendChild(h2);
     });
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    fetchMusics();
-});
