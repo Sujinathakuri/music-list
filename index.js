@@ -115,6 +115,10 @@ function fetchMusics() {
         });
 }
 
+
+
+
+
 //fetchMusics();
 
 function renderMusics(musics) {
@@ -125,7 +129,3 @@ function renderMusics(musics) {
         main.appendChild(h2);
     });
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    fetchMusics();
-});
