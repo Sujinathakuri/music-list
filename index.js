@@ -117,7 +117,7 @@ fetch('https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay')
 //fetchMusics();
 
 function renderMusics(musics) {
-    music.forEach(music => {
+    musics.forEach(music => {
         const h2 = document.createElement('h2');
         h2.innerHTML = music.name;
         main.appendChild(h2);
